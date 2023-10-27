@@ -1,0 +1,108 @@
+header{
+	background:rgb(10, 10, 10);
+	color:rgb(233, 233, 245);
+	margin: 0px;
+	padding-left:50px;
+	height:100px;
+}
+.heading p{
+	text-align:center;
+	padding:5px;
+	margin: 3px;
+	font-size:25px;
+}
+
+.main .head-part {
+   margin:50px;
+   text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow:10px 10px 10px rgb(209, 163, 163);
+}
+
+/*CARD*/
+/*1 card*/
+
+.main-card{  
+	margin:3%;
+	text-align:center;
+}
+.card{
+	width:15%;
+	display:inline-block;
+	box-shadow:2px 2px 20px black;
+	border-radius:5px;
+	margin:2%;
+	
+}
+.image img{
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	
+}
+.head-c{
+	text-align:center;
+    color:#0e0d0dd0;
+	padding:10px;
+}
+
+/*2 card*/
+
+.card{
+	width:15%;
+	display:inline-block;
+	box-shadow:2px 2px 20px black;
+	border-radius:5px;
+	margin:2%;
+	
+}
+.image img{
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	
+}
+.head-c{
+	text-align:center;
+    color:#0e0d0dd0;
+	padding:10px;
+}
+
+/*3 card*/
+.card{
+	width:15%;
+	display:inline-block;
+	box-shadow:2px 2px 20px black;
+	border-radius:5px;
+	margin:2%;
+	
+}
+.image img{
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	
+}
+.head-c{
+	text-align:center;
+    color:#0e0d0dd0;
+	padding:10px;
+}
+
+/*4 card*/
+.card{
+	width:15%;
+	display:inline-block;
+	box-shadow:2px 2px 20px black;
+	border-radius:5px;
+	margin:2%;
+	
+}
+.image img{
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	
+}
+.head-c{
+	text-align:center;
+    color:#0e0d0dd0;
+	padding:10px;
+}

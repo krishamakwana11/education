@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0 inimum-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <link rel="icon" type="image/jpeg" id="favicon" href="logo_edu.png"/>
+        
+       <link rel="stylesheet" href="contact-us.css">
+
+        <script>
+            $(function(){
+                $("#header").load("header.html")
+            });
+        </script>
+    </head>
+    
+    <body>
+        <!--header-->
+        <div id="header"></div>
+
+        <script>
+			AOS.init();
+		 </script>
+
+        <header>
+            <div class="heading">
+                <p>OUR SCHOOL</p>
+                <p><b>YOU ARE HERE:</b>Home/Contact Us</p>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="head-part">
+                <p>CONTACT US</p> 
+                <p>We're making every child's world better</p>     
+            </div>
+
+            <div class="main-card">
+                <div data-aos="flip-down" style="display: flex; justify-content: center;">                
+
+                <div class="card">
+                    <img class="image" src="home.png" alt="address"/>
+
+                    <div class="head-c" style="font-size: 20px;">
+                        <h3>ADDRESS</h3>
+                        <h3>2172 Poe Road, Florence, SC 29501</h3>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="image" src="phone.png" alt="contact us"/>
+                    
+                    <div class="head-c" style="font-size: 20px;">
+                        <h3>CONTACT US</h3>
+                        <h3>+843-245-5844</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="gmail.png" alt="gmail"/>
+                    
+                    <div class="head-c" style="font-size: 20px;">
+                        <h3>PHONE</h3>
+                        <h3>noreply@yourmail.com</h3>
+                    </div>
+                </div>
+            </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15062.293044771763!2d72.85445249788424!3d19.300915282693623!3m2!1i1024!2i768!4f13.1!2m1!1stree%20school!5e0!3m2!1sen!2sin!4v1617697870084!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+        </div>  
+
+         <script>
+			$(function(){
+				$("#footer").load("footer.html")
+			});
+        </script>
+        
+        <div id="footer"></div>
+    </body>
+</html>

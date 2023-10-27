@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Addmission</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0 inimum-scale=1.0">
+		
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="icon" type="image/jpeg" id="favicon" href="logo_edu.png">
+
+		<link rel="stylesheet" type="text/css" href="addmission.css"/>
+
+		<script>
+			$(function(){
+				$("#header").load("header.html")
+			});
+		</script>
+
+	</head>
+	<body style="margin:0px;">
+		<!--header-->
+		<div id="header"></div>
+
+		<script>
+			AOS.init();
+		</script>
+
+		<header>
+			<div class="heading">
+				<p>OUR SCHOOL</p>
+	   			<p><b>YOU ARE HERE:</b>Home/Addmission</p>
+	 		</div>
+ 		</header>
+
+		 <!--form--->
+		
+			<div data-aos="zoom-in-down"></div>
+				<div class="image">
+					<img src="addmission1.png" alt="addmission" width="40%"/>
+				</div>
+			</div>
+
+			<!--<center>
+				<div class="box">
+					<h2>STUDENT REGISTRATION FORM</h2>
+					
+					<form id="cont">
+						<lable for="name">NAME:</lable>
+						<input type="text" maxlength="100px" name="full_name" placeholder="Enter Full Name"/>
+						<br><br>
+				
+						<lable for="name">ADDRESS::</lable>
+						<input type="text" name="address" maxlength="500px" autocomplete="off" placeholder="Enter Your Address">
+						<br><br>
+
+						<lable for="name">EMAIL ID:</lable>
+						<input type="email" placeholder="Enter Email Id" autocomplete="off" name="email"/>
+						<br><br>
+
+						C<lable for="name">ONTACT NO.:</lable>
+						<input type="number" placeholder="Enter Phone Number" autocomplete="off" maxlength="20px"/>
+						<br><br>
+						
+						<lable for="name">DOB:</lable>
+						<input type="number" placeholder="yy/mm/dd" autocomplete="off" name="dob"/>
+						<br><br>
+
+						<lable for="name">GENDER:</lable>
+						MALE<input type="radio" name="gender" value="male"/>
+						FEMALE<input type="radio" name="gender" value="female"/>
+						<br><br>
+
+						<lable for="name">COURSES:</lable>
+						<select name="courses">
+							<option value="nursery">NURSERY</option>
+							<option value="junior">JUNIOR</option>	
+							<option value="senior">SENIOR</option>
+							<option value="Secondary">SECONDARY</option>		
+						</select>
+						<br><br>
+
+							<button class="btn">SUBMIT</button>
+							<button class="btn">RESET</button>
+					</form>
+				</div>
+			</center>-->
+			<div class="container text-white">
+			<h4 style="text-align:center;" class="display-4">REGISTRATION</h4>
+			
+			<form onsubmit="return Password()">
+				<div class="row mb-3 pt-3">
+					<div class="col">
+						<span>FIRST NAME :</span>
+						<input type="text" class="form-control" placeholder="Enter your first name">
+					</div>
+					
+					<div class="col">
+						<span>MIDDLE NAME :</span>
+						<input type="text" class="form-control" placeholder="Enter your middle name">
+					</div>
+				
+					<div class="col">
+						<span>LAST NAME :</span>
+						<input type="text" class="form-control" placeholder="Enter your last name">
+					</div>
+				</div>
+				
+				<div class="row mb-3">
+					<div class="col">
+						<span>EMAIL ID :</span>
+						<input type="text" class="form-control" placeholder="Enter your email id">
+					</div>
+					
+					<div class="col">
+						<span>PHONE NUMBER :</span>
+						<input type="number" class="form-control" placeholder="Enter your phone number">
+					</div>
+				</div>
+			
+				<div class="row mb-3">
+					<div class="col">
+						<span>ADDRESS :</span>
+						<input type="text" class="form-control" placeholder="Enter your address">
+					</div>
+				</div>			
+			
+				<div class="row mb-3">
+					<div class="col">
+						<span>USERNAME :</span>
+						<input type="text" placeholder="Enter your username" class="form-control">
+					</div>
+					<div class="col">
+						<span>GENDER :</span>
+						<select class="form-control" id="gender">
+							<option>Male</option>
+							<option>Female</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="row pb-3">
+					<div class="col">
+						<span>PASSWORD :</span>
+						<input type="password" placeholder="Enter your password" class="form-control" id="password">
+						<i class="fa fa-eye" aria-hidden="true"  id="hidepass"></i>
+					</div>
+					<div class="col">
+						<span>CONFIRM PASSWORD :</span>
+						<input type="password" placeholder="Re-enter your password" class="form-control" id="pass">
+						<i class="fa fa-eye" aria-hidden="true" id="hide"></i>
+					</div>
+				
+					<!--<p class="m-2 p-3">show password
+						<input type="checkbox" class="form-control d-flex"  onclick="check()">
+					</p>-->
+				</div>
+			
+				<span id="message" style="color:white"></span>
+			
+				<div class="row">
+					<div class="col">
+						<input type="submit" value="SUBMIT" class="btn btn-outline-light form-control p-2 mb-4" >
+					</div>
+					<div class="col">
+						<input type="reset" value="CLEAR" onclick="reset()" class="btn btn-outline-light form-control p-2 mb-4" >
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<script> 
+			// for password
+				var hidepass = document.querySelector("#hidepass");
+				var pass = document.querySelector("#password");
+
+				hidepass.addEventListener("click",function(){
+				var type = pass.getAttribute("type") === "password" ? "text" : "password";
+				pass.setAttribute("type",type); 
+				hidepass.classList.toggle('fa-eye-slash');
+				});
+				
+			//for confirm password
+				var hide = document.querySelector("#hide");
+				var password = document.querySelector("#pass");
+
+				hide.addEventListener("click",function(e){
+				var type = password.getAttribute("type") === "password" ? "text" : "password";
+				password.setAttribute("type",type); 
+				hide.classList.toggle('fa-eye-slash');
+				});
+				
+				
+				function Password(){
+   					var pass = document.getElementById("password").value;
+
+					if(pass === "")
+					{
+						document.getElementById("message").innerHTML="<br><h3 style='text-align: center;'>This field is mendatory</h3>";
+						return false;
+					}
+
+					else if(pass.length <= 8)
+					{
+						document.getElementById("message").innerHTML="<br><br><h3 style='text-align:center;'>Your password should be atleast 8 characters</h3>";
+						return false;
+					}
+
+					else{
+						alert("Successful");
+					}
+				}
+				
+				function reset(){
+					location.reload();
+				}
+		
+		
+		<script>
+			$(function(){
+				$("#footer").load("footer.html")
+			});
+		</script>
+			<div id="footer"></div>
+	</body>
+</html>
